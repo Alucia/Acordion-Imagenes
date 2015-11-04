@@ -1,23 +1,45 @@
 /* Escribe tu código CSS aquí */
 body,html{
 	width: 100%;
-	height: 100%;
+	height: 100%;    
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 } 
 .bg{
-	height: auto;
+    width: 100%;
+    height: 100%;
 	background: url("../images/bg.jpg");
+    position: relative;
+    overflow: hidden;
 }
-.bg div{
-	position: relative;
+.content{
+    width: 80%;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    border: 10px solid #fff;
+    box-shadow: 2px 2px 8px -1px #000000;
+
 }
 div {
-    width: 100px;
-    height: 100px;
-    background: red;
+    width: 90px;
     transition: width 2s;
     -webkit-transition: width 2s;
     display: inline-block; 
 }
-div:hover {
+.content div:hover {
     width: 300px;
+}
+.bg-dark{
+    width: 100px;
+    /*padding: 5%;*/
+    background-color: red;
+    text-align: center;
+    visibility: hidden;
+}
+.bg-dark:hover{
+    visibility: visible;
+
 }
