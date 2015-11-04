@@ -1,1 +1,23 @@
 /* Escribe tu código CSS aquí */
+body,html{
+	width: 100%;
+	height: 100%;
+} 
+.bg{
+	height: auto;
+	background: url("../images/bg.jpg");
+}
+.bg div{
+	position: relative;
+}
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+    -webkit-transition: width 2s;
+    display: inline-block; 
+}
+div:hover {
+    width: 300px;
+}
